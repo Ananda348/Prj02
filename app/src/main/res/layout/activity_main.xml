@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="MASUKAN DUA ANGKA"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bersihkan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="Hasil"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/hasilangka"
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hasil"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+
+    <EditText
+        android:id="@+id/angka_pertama"
+        android:hint="Masukan Angka Pertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="22dp"
+        android:layout_below="@id/textView5"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/angka_kedua"
+        android:hint="Masukan Angka Kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/angka_pertama"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angka_kedua"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tambah"
+        android:layout_alignBottom="@id/tambah"
+        android:layout_toEndOf="@id/tambah"
+        android:layout_toRightOf="@id/tambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/bersihkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tambah"
+        android:text="Bersihkan"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="/"
+        android:layout_above="@id/bersihkan"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="80dp"
+        android:text="X"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/bagi"
+        android:layout_toStartOf="@id/bagi"
+        android:layout_toLeftOf="@id/bagi" />
+
+</RelativeLayout>
